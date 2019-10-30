@@ -14,7 +14,7 @@ class Plugin {
     core.request({
       _: 'phpinfo()'
     }).then((_ret) => {
-      t.safeHTML(_ret['text']).showLoading(false);
+      t.safeHTML(antSword.unxss(_ret['text'])).showLoading(false);
       toastr.success('获取成功！', 'Success');
     }).catch((e) => {
       toastr.error(JSON.stringify(e), 'Error');

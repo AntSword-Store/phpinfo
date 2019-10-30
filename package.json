@@ -3,6 +3,7 @@
   "main": "main.js",
   "icon": "rocket",
   "description": "获取PHPINFO信息",
+  "version": "0.2",
   "author": {
     "name": "ANT",
     "email": "xxx"
